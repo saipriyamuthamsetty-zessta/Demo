@@ -1,0 +1,160 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+
+
+
+
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git status
+On branch main
+Your branch is behind 'origin/main' by 41 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)        
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../backend/.env
+        modified:   ../backend/src/app.ts
+        modified:   ../backend/src/database/repository/userRepo.ts
+        modified:   ../backend/src/routes/v1/profile/user.ts
+        modified:   gen/api/.gitignore
+        modified:   gen/api/README.md
+        modified:   gen/api/api.ts
+        modified:   gen/api/base.ts
+        modified:   gen/api/common.ts
+        modified:   gen/api/configuration.ts
+        modified:   gen/api/git_push.sh
+        modified:   gen/api/index.ts
+        modified:   gen/api/package.json
+        modified:   gen/api/tsconfig.json
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/components/dashboard/admin/AdminSettings.tsx
+        modified:   swagger.json
+
+
+
+
+
+
+
+
+
+
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git checkout -b image-crop
+Switched to a new branch 'image-crop'
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git status
+On branch image-crop
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../backend/.env
+        modified:   ../backend/src/app.ts
+        modified:   ../backend/src/database/repository/userRepo.ts
+        modified:   ../backend/src/routes/v1/profile/user.ts
+        modified:   gen/api/.gitignore
+        modified:   gen/api/README.md
+        modified:   gen/api/api.ts
+        modified:   gen/api/base.ts
+        modified:   gen/api/common.ts
+        modified:   gen/api/configuration.ts
+        modified:   gen/api/git_push.sh
+        modified:   gen/api/index.ts
+        modified:   gen/api/package.json
+        modified:   gen/api/tsconfig.json
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/components/dashboard/admin/AdminSettings.tsx
+        modified:   swagger.json
+
+committed)
+        src/components/dashboard/admin/CustomizeImageModal.tsx
+
+no changes added to commit (use "git add" and/or "git 
+commit -a")
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git add .
+warning: LF will be replaced by CRLF in frontend/gen/api/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/README.md.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/api.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/base.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/common.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/configuration.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/git_push.sh.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/index.ts.
+The file will have its original line endings in your working directory
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in frontend/gen/api/tsconfig.json.
+The file will have its original line endings in your working directory
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git status
+On branch image-crop
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)   
+        modified:   gen/api/api.ts
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/components/dashboard/admin/AdminSettings.tsx
+        new file:   src/components/dashboard/admin/CustomizeImageModal.tsx
+        modified:   swagger.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in w        modified:   ../backend/src/app.ts
+        modified:   ../backend/src/database/repository/userRepo.ts
+        modified:   ../backend/src/routes/v1/profile/user.ts
+
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git commit -m "add image crop component"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"    
+
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ADMIN@LAPTOP-H0F58AQD.(none)')
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git commit -m "add image crop component"
+[image-crop ecff8735] add image crop component        
+ 6 files changed, 329 insertions(+)
+ create mode 100644 frontend/src/components/dashboard/admin/CustomizeImageModal.tsx
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> git push origin image-crop
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 3.57 KiB | 914.00 KiB/s, done.
+Total 15 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), completed with 11 local objects.
+To https://github.com/zessta/omni-finance.git
+ * [new branch]        image-crop -> image-crop       
+PS C:\Zessta-new\ominifinance\omni-finance\frontend> 
